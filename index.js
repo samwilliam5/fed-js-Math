@@ -12,27 +12,27 @@ console.log(Math.round(1.4));
 console.log(Math.floor(Math.random() * 200)+1);
 
 
+// document.getElementById('p1').innerHTML=(Math.floor(Math.random() * 200)+1);
 
 
 
 
 
+// const button = document.getElementById('btn');
+// const body = document.querySelector('body');
+// const color = ['red', 'green', 'blue', 'orange', 'pink', 'grey', 'lightblue'];
 
-document.getElementById('p1').innerHTML=(Math.floor(Math.random() * 200)+1);
-
-
-
-
-
-
-const button = document.getElementById('btn');
-const body = document.querySelector('body');
-const color = ['red', 'green', 'blue', 'orange', 'pink', 'grey', 'lightblue'];
-
-body.style.backgroundColor = 'black';
-button.addEventListener('click', (e) => {
-    const colorIndex = parseInt(Math.random() * color.length);
-    body.style.backgroundColor = color[colorIndex];
-});
+// body.style.backgroundColor = 'black';
+// button.addEventListener('click', (e) => {
+//     const colorIndex = parseInt(Math.random() * color.length);
+//     body.style.backgroundColor = color[colorIndex];
+// });
 
 
+const setBackgroundcolor = (e) => {
+    const randomColor = Math.floor(Math.random()*16222222);
+    document.body.style.backgroundColor = "#" + randomColor;
+  }
+  
+  color.addEventListener("click", setBackgroundcolor);
+  setBackgroundcolor();
